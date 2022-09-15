@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+
+.wrapper {
+	width: 250px;
+	margin: 0 auto;
+	text-align: center;
+
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(59, 59, 59);
+}
+
+.star__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.star {
+	width: 32px;
+	height: 24px;
+	background-image: url(./stars.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	cursor: pointer;
+}
+
+.star:hover,
+.star:hover ~ .star,
+.star-active {
+	background-position: 0 -24px;
+}
+
+.stats__wrapper > hr {
+	width: 80px;
+	background-color: #ccc;
+	border: none;
+	height: 1px;
+}
+
+.stats__wrapper {
+	margin-top: 1rem;
+}
+
+.stats__current-rating {
+	font-weight: 600;
+}
+
+.stats__vote-count {
+	color: grey;
+	font-size: .7rem;
+}
